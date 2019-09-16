@@ -27,9 +27,14 @@ class Counter extends React.Component {
   };
 
   render() {
+    let changes = 'unbolded';
+    if(this.state.counter < 0){
+      changes = 'bolded';
+    }
+
     return (
       <div>
-        <h4>Counter: {this.state.counter}</h4>
+        <h4 className={changes}>Counter: {this.state.counter}</h4>
         <button onClick={this.incrementCounter}> Click here to + 1 </button>
         <button onClick={this.decrementCounter}> Click here to - 1 </button>
       </div>
