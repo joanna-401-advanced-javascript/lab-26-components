@@ -30,8 +30,8 @@ class Counter extends React.Component {
     return (
       <div>
         <h4>{this.state.counter}</h4>
-        <button onClick={this.incrementCounter}> + 1 </button>
-        <button onClick={this.decrementCounter}> - 1 </button>
+        <button onClick={this.incrementCounter}> Click here to + 1 </button>
+        <button onClick={this.decrementCounter}> Click here to - 1 </button>
       </div>
     );
   }
