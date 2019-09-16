@@ -27,14 +27,14 @@ class Counter extends React.Component {
   };
 
   render() {
-    let changes = 'unbolded';
+    let changes = 'normal';
     if(this.state.counter < 0){
-      changes = 'bolded';
+      changes = 'warning';
     }
 
     return (
-      <div>
-        <h4 className={changes}>Counter: {this.state.counter}</h4>
+      <div className={'counter'}>
+        <h4 className={changes}>{this.state.counter}</h4>
         <button onClick={this.incrementCounter}> Click here to + 1 </button>
         <button onClick={this.decrementCounter}> Click here to - 1 </button>
       </div>
