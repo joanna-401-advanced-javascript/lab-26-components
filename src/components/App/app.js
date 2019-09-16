@@ -1,8 +1,8 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
+import './app.scss';
 
 class Counter extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
-        <h4>{this.state.counter}</h4>
+        <h4>Counter: {this.state.counter}</h4>
         <button onClick={this.incrementCounter}> Click here to + 1 </button>
         <button onClick={this.decrementCounter}> Click here to - 1 </button>
       </div>

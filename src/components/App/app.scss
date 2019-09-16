@@ -1,0 +1,29 @@
+$fontStack: Helvetica, sans-serif;
+$backgroundColor: white;
+$color5: #735D78;
+$color4: #B392AC;
+$color3: #D1B3C4;
+$color2: #E8C2CA;
+$color1: #F7D1CD;
+
+body {
+  background-color: $color2;
+}
+
+header {
+  background-color: $backgroundColor;
+  padding: 5px;
+
+  h1 {
+    font: 100% $fontStack;
+    font-size: 1.5em;
+    color: $color5;
+    text-align: center;
+  }
+}
+
+h4 {
+  background-color: $backgroundColor;
+  color: $color4;
+  text-align: center;
+}
