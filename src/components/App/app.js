@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../Header/Header.jsx';
+import Footer from '../Footer/Footer.jsx';
 
 import './app.scss';
 
@@ -12,14 +12,14 @@ class Counter extends React.Component {
     };
   }
 
-  incrementCounter = e => {
+  incrementCounter = (e) => {
     e.preventDefault();
     this.setState(previousState => ({
       counter: previousState.counter + 1,
     }));
   };
 
-  decrementCounter = e => {
+  decrementCounter = (e) => {
     e.preventDefault();
     this.setState(previousState => ({
       counter: previousState.counter - 1,
@@ -28,7 +28,7 @@ class Counter extends React.Component {
 
   render() {
     let changes = 'normal';
-    if(this.state.counter < 0){
+    if (this.state.counter < 0) {
       changes = 'warning';
     }
 
